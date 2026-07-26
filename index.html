@@ -1,66 +1,141 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Gâteaux de Saris</title>
 
     <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="Gâteaux de Saris" class="logo-img">
+        </div>
 
-    <div class="logo">
+        <nav>
+            <button id="frBtn" class="lang-btn">🇫🇷 FR</button>
+            <button id="enBtn" class="lang-btn active">🇬🇧 EN</button>
+        </nav>
+    </header>
 
-        Gâteaux de Saris
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 id="title">Homemade Cakes</h1>
+            <p id="subtitle">Crafted with passion and premium ingredients</p>
+            <a href="#catalog" class="order-btn">Order Now</a>
+        </div>
+    </section>
 
-    </div>
+    <!-- CATALOG -->
+    <section class="catalog" id="catalog">
+        <div class="section-header">
+            <h2>Our Signature Cakes</h2>
+            <p>Made with love, one cake at a time</p>
+        </div>
 
-    <nav>
+        <div class="cakes-grid">
 
-        <button id="frBtn">🇫🇷 FR</button>
+            <!-- Fruit Cake -->
+            <article class="cake-card">
+                <div class="cake-image">
+                    <img src="cakes/fruit-cake.jpeg" alt="Fresh Fruit Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Fresh Fruit Cake</h3>
+                    <p class="description">
+                        Fresh strawberries, kiwi, peaches and blueberries over light vanilla cream.
+                    </p>
+                    <div class="price-row">
+                        <span class="price">Starting at $45 CAD</span>
+                        <button class="order-small">Order Now</button>
+                    </div>
+                </div>
+            </article>
 
-        <button id="enBtn">🇬🇧 EN</button>
+            <!-- Fresita Cake -->
+            <article class="cake-card">
+                <div class="cake-image">
+                    <img src="cakes/fresita-cake.jpeg" alt="Fresita Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Fresita Cake</h3>
+                    <p class="description">
+                        Soft sponge filled with fresh strawberries and whipped cream. A classic favorite.
+                    </p>
+                    <div class="price-row">
+                        <span class="price">Starting at $48 CAD</span>
+                        <button class="order-small">Order Now</button>
+                    </div>
+                </div>
+            </article>
 
-    </nav>
+            <!-- Birthday Cake -->
+            <article class="cake-card">
+                <div class="cake-image">
+                    <img src="cakes/birthday-cake1.jpeg" alt="Birthday Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Birthday Cake</h3>
+                    <p class="description">
+                        Custom birthday cake for children and adults. Personalized flavors and decorations.
+                    </p>
+                    <div class="price-row">
+                        <span class="price">Starting at $55 CAD</span>
+                        <button class="order-small">Order Now</button>
+                    </div>
+                </div>
+            </article>
 
-</header>
+            <!-- Cartoon Cake -->
+            <article class="cake-card">
+                <div class="cake-image">
+                    <img src="cakes/cartoon-cake.jpeg" alt="Cartoon Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Cartoon Cake</h3>
+                    <p class="description">
+                        Fun and colorful character cakes. Perfect for kids’ parties and special celebrations.
+                    </p>
+                    <div class="price-row">
+                        <span class="price">Starting at $60 CAD</span>
+                        <button class="order-small">Order Now</button>
+                    </div>
+                </div>
+            </article>
 
-<section class="hero">
+            <!-- Sport Cake -->
+            <article class="cake-card">
+                <div class="cake-image">
+                    <img src="cakes/sport-cake3.jpeg" alt="Sport Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Sport Cake</h3>
+                    <p class="description">
+                        Themed cakes for sports lovers. Soccer, basketball, hockey and more.
+                    </p>
+                    <div class="price-row">
+                        <span class="price">Starting at $58 CAD</span>
+                        <button class="order-small">Order Now</button>
+                    </div>
+                </div>
+            </article>
 
-    <h1 id="title">
+        </div>
+    </section>
 
-        Homemade Cakes
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Gâteaux de Saris · Homemade with passion</p>
+    </footer>
 
-    </h1>
-
-    <p id="subtitle">
-
-        Crafted with passion and premium ingredients
-
-    </p>
-
-    <button class="order">
-
-        Order Now
-
-    </button>
-
-</section>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
