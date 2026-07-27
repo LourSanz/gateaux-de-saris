@@ -25,7 +25,7 @@ header{
 }
 
 .logo-img{
-    height: 68px;
+    height: 250px;          /* más grande */
     width: auto;
 }
 
@@ -52,7 +52,7 @@ header{
 .hero{
     height: 82vh;
     min-height: 540px;
-    background-image: url('cakes/hero.jpeg');
+    background-image: url('cakes/flowers-cake2.jpeg');
     background-size: cover;
     background-position: center;
     position: relative;
