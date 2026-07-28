@@ -72,9 +72,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     name: "Special Birthday Cake",
                     description: "Elegant and fun birthday cake with custom decorations for any age."
                 }
+                
             ],
             startingAt: "Starting at",
             footer: "© 2026 Gâteaux de Saris · Homemade with passion",
+            aboutTitle: "About Us",
+            aboutText: "At Gâteaux de Saris we believe that every cake tells a story. Our cakes are handmade using fresh, high-quality ingredients, carefully crafted from baking to the final decoration. Whether it’s a birthday, a special celebration, or simply a treat for yourself, we want to create a dessert that looks as beautiful as it tastes. Thank you for letting us be part of your sweetest moments.",
             whatsappMessage: "Hello! I'm interested in the *{cake}*. Could you give me more information?"
         },
         fr: {
@@ -147,6 +150,8 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             startingAt: "À partir de",
             footer: "© 2026 Gâteaux de Saris · Fait maison avec passion",
+            aboutTitle: "À Propos de Nous",
+            aboutText: "Chez Gâteaux de Saris, nous croyons que chaque gâteau raconte une histoire. Nos gâteaux sont préparés de manière artisanale avec des ingrédients frais et de haute qualité, en soignant chaque détail de la cuisson jusqu’à la décoration finale. Que ce soit pour un anniversaire, une célébration spéciale ou simplement pour se faire plaisir, nous voulons créer un dessert aussi beau que savoureux. Merci de nous permettre de faire partie de vos moments les plus doux.",
             whatsappMessage: "Bonjour! Je suis intéressé(e) par le *{cake}*. Pourriez-vous me donner plus d'informations?"
         },
         es: {
@@ -219,6 +224,8 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             startingAt: "Desde",
             footer: "© 2026 Gâteaux de Saris · Hecho en casa con pasión",
+            aboutTitle: "Sobre Nosotros",
+            aboutText: "En Gâteaux de Saris creemos que cada pastel cuenta una historia. Nuestros pasteles son elaborados de manera artesanal, utilizando ingredientes frescos y de alta calidad, cuidando cada detalle desde el horneado hasta la decoración final. Ya sea para un cumpleaños, una celebración especial o simplemente para darte un gusto, queremos crear un postre que se vea tan hermoso como sabe. Gracias por permitirnos ser parte de tus momentos más dulces.",
             whatsappMessage: "¡Hola! Me interesa el *{cake}*. ¿Me puedes dar más información?"
         }
     };
@@ -241,7 +248,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".section-header h2").textContent = t.catalogTitle;
         document.querySelector(".section-header p").textContent = t.catalogSubtitle;
         document.querySelector("footer p").textContent = t.footer;
-
+        document.getElementById("aboutTitle").textContent = t.aboutTitle;
+        document.getElementById("aboutText").textContent = t.aboutText;
         // Botones "Order Now"
         document.querySelectorAll(".order-btn, .order-small").forEach(btn => {
             btn.textContent = t.orderNow;

@@ -25,7 +25,7 @@ header{
 }
 
 .logo-img{
-    height: 250px;          /* más grande */
+    height: 110px;          /* más grande */
     width: auto;
 }
 
@@ -280,5 +280,90 @@ footer{
 
     .hero-content h1{
         font-size: 2.3rem;
+    }
+}
+/* ========== ABOUT US ========== */
+.about {
+    padding: 90px 40px;
+    background: linear-gradient(135deg, #fff5f7 0%, #fce8ec 100%);
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    color: #A55C68;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* SOCIAL BUTTONS */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+    color: white;
+}
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Responsive About */
+@media (max-width: 768px) {
+    .about {
+        padding: 70px 25px;
+    }
+
+    .about-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-content p {
+        font-size: 1.05rem;
+    }
+}
+
+/* Responsive */
+@media (max-width: 900px){
+    .about-container{
+        grid-template-columns: 1fr;
     }
 }
